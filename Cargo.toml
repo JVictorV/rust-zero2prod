@@ -2,7 +2,18 @@
 name = "zero2prod"
 version = "0.1.0"
 edition = "2021"
+authors = ["JVictorV <contato@jvictorv.top>"]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "zero2prod"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix-web = "4.1"
+tokio = {version = "1.20.1", features = ["macros", "rt-multi-thread"]}
+reqwest = "0.11"
