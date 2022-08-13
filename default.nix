@@ -15,6 +15,8 @@ pkgs.mkShell {
     clippy
     pkgconfig
     openssl
+    sqlx-cli
+    postgresql
   ];
 
   # Certain Rust tools won't work without this
